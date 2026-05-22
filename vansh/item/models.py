@@ -1,5 +1,5 @@
 from django.db import models
-import django.contrib.auth.models import User
+from django.contrib.auth.models import User
 
 
 # Create your models here.
@@ -8,7 +8,7 @@ class Category(models.Model):
 
     class Meta:
         ordering = ('name',)
-        verbose_np = 'Categories'
+        verbose_name_plural = 'Categories'
 
     def __str__(self):
         return self.name

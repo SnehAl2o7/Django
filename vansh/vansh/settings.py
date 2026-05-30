@@ -147,8 +147,7 @@ if USE_S3:
     AWS_S3_ENDPOINT_URL = os.environ.get('AWS_S3_ENDPOINT_URL')  # e.g., https://<project-ref>.supabase.co/storage/v1/s3
     AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', 'us-east-1')
     
-    # Optional S3 settings
-    AWS_DEFAULT_ACL = 'public-read'
+
     AWS_QUERYSTRING_AUTH = False
     
     STORAGES = {
